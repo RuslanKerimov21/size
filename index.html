@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parilka</title>
+	<!-- Подключение стилей -->
+	<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+	<!-- Конец подключения стилей -->
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="search">
+                <form class="search" action="#">
+                    <input type="text" name="search" placeholder="Поиск по сайту" autocomplete="off">
+                    <div class="result"></div>
+                    <button class="form-button" type="submit">
+                        <img src="img/seacrh.svg" alt="search">
+                    </button>
+                </form>
+            </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="li-item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="li-item">
+                        <a href="#">Мероприятия</a>
+                    </li>
+                    <li class="li-item">
+                        <a href="#">Премия</a>
+                    </li>
+                    <li class="li-item">
+                        <a href="#">Участники</a>
+                    </li>
+                    <li class="li-item">
+                        <a href="#">Карта участников</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user">
+                <div class="button-group">
+                    <button class="user__btn">
+                        <img src="img/user.png" alt="user">
+                    </button>
+                </div>
+                <div class="button-group">
+                    <button class="button register">Регистрация</button>
+                    <button class="sign-in">Вход</button>
+                </div>
+            </div>
+            <button class="burger"></button>
+        </div>
+    </header>
+    <section class="offer">
+        <ul class="offer-items" id="ull">
+            <li class="offer-item triger active" id="li">
+                <div class="item-content">
+                    <h3 class="title">
+                        Наша цель
+                    </h3>
+                    <div class="item-descr">
+                        Нашей основной целью является популяризация здорового образа жизни, а так же сохранение и систематизация процедур (в т.ч. лечебных), 
+                        проводимых в бане.
+                    </div>
+                    <div class="button-offer">
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-img img-1" style="background-image: url(img/img1.jpg); object-fit: cover;"></div>
+                <div class="number-item">01</div>
+                <div class="item-name__prev">
+                    <span class="item-name">Наша цель</span>
+                </div>
+                <div class="plus"></div>
+            </li>
+            <li class="offer-item triger" id="li">
+                <div class="item-content">
+                    <h3 class="title">
+                        БаняФест
+                    </h3>
+                    <div class="item-descr">
+                        Самый большой фестиваль бани, который мы проводим с 2010 года. Любители бани имеют возможность увидеть мастер-классы по парению, заготовке веников, массажу, СПА, попариться в разнообразных банях
+                    </div>
+                    <div class="button-offer">
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-img img-1" style="background-image: url(img/img2.jpg);"></div>
+                <div class="number-item">02</div>
+                <div class="item-name__prev">
+                    <span class="item-name">Баня Фест</span>
+                </div>
+                <div class="plus"></div>
+            </li>
+            <li class="offer-item triger" id="li bt">
+                <div class="item-content">
+                    <h3 class="title">
+                        Наша цель
+                    </h3>
+                    <div class="item-descr">
+                        Нашей основной целью является популяризация здорового образа жизни, а так же сохранение и систематизация процедур (в т.ч. лечебных), 
+                        проводимых в бане.
+                    </div>
+                    <div class="button-offer">
+                        <a href="#" class="button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="item-img img-1" style="background-image: url(img/img3.jpg);"></div>
+                <div class="number-item">03</div>
+                <div class="item-name__prev">
+                    <span class="item-name">Баня Фест</span>
+                </div>
+                <div class="plus"></div>
+            </li>
+        </ul>
+    </section>
+    <section class="about">
+        <ul class="logo-items">
+            <li class="logo-item">
+                <a href="#">
+                    <img src="img/logo-item1.svg" alt="logo">
+                </a>
+            </li>
+            <li class="logo-item">
+                <p>БаняФест — самый большой фестиваль бани, который мы проводим с 2010 года.</p>
+            </li>
+            <li class="logo-item">
+                <a href="#">
+                    <img src="img/logo-item2.svg" alt="logo">
+                </a>
+            </li>
+            <li class="logo-item">
+                <p>
+                    «Русь Банная» — единственное профессиональное банное мероприятие общероссийского уровня основанное 
+                    в 2010-м году.
+                </p>
+            </li>
+        </ul>
+        <div class="container">
+            <div class="about-video__and-info">
+                <ul class="video-list">
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                Чемпионат по банному мастерству Москвы 
+                                и Московской области "Московский Пар"
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                Чемпионат по банному мастерству Москвы 
+                                и Московской области "Московский Пар"
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                    <li class="video-item">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3LLcCZso63U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="video-descr">
+                            <p>
+                                БаняФест Международный фестиваль Русской бани в Ногинске
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="about-info">
+                    <h3 class="title">О нас</h3>
+                    <div class="about-descr">
+                        <p>
+                            Национальная Федерация Специалистов Банного Парения (НФСБП) была создана по инициативе Международного Содружества профессиональных парильщиков “РусПар” (г. Москва) при активной поддержке Организации Банных Специалистов (г. Санкт-Петербург), Общества любителей бани «Татар Мунчасы» (г. Набережные Челны) и Общества «Банный Союз» (г. Челябинск).
+                        </p>
+                        <p>Основной целью создания НФСБП является популяризация здорового образа жизни</p>
+                    </div>
+                    <a href="#" class="button">Узнать больше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="events">
+        <div class="container">
+            <div class="swiper swiper-init">
+                <div class="slider-navigation">
+                    <h3 class="title">
+                        События
+                    </h3>
+                    <div class="slider-button">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <ul class="swiper-wrapper warper-1">
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Отборочные туры 2020–2021 РусьБанная
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="share">
+                                    <button class="share-btn"></button>
+                                </div>
+                                <button class="more">Подробнее</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Отборочные туры 2020–2021 РусьБанная
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="share">
+                                    <button class="share-btn"></button>
+                                </div>
+                                <button class="more">Подробнее</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Отборочные туры 2020–2021 РусьБанная
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="share">
+                                    <button class="share-btn"></button>
+                                </div>
+                                <button class="more">Подробнее</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Отборочные туры 2020–2021 РусьБанная
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="share">
+                                    <button class="share-btn"></button>
+                                </div>
+                                <button class="more">Подробнее</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Отборочные туры 2020–2021 РусьБанная
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-btn">
+                                <div class="share">
+                                    <button class="share-btn"></button>
+                                </div>
+                                <button class="more">Подробнее</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="swiper swiper-init">
+                <div class="slider-navigation">
+                    <h3 class="title">
+                        Последние новости
+                    </h3>
+                    <div class="slider-button">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <ul class="swiper-wrapper wrapper-2">
+                    <li class="swiper-slide">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        БаняФест–VII
+                                    </div>
+                                    <div class="card-descr">
+                                        <p>
+                                            БаняФест-2016 готовился 
+                                            в непростое время экономических потрясений...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        БаняФест–VII
+                                    </div>
+                                    <div class="card-descr">
+                                        <p>
+                                            БаняФест-2016 готовился 
+                                            в непростое время экономических потрясений...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        БаняФест–VII
+                                    </div>
+                                    <div class="card-descr">
+                                        <p>
+                                            БаняФест-2016 готовился 
+                                            в непростое время экономических потрясений...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        БаняФест–VII
+                                    </div>
+                                    <div class="card-descr">
+                                        <p>
+                                            БаняФест-2016 готовился 
+                                            в непростое время экономических потрясений...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide">
+                        <div class="card-img">
+                            <img src="img/img4.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        БаняФест–VII
+                                    </div>
+                                    <div class="card-descr">
+                                        <p>
+                                            БаняФест-2016 готовился 
+                                            в непростое время экономических потрясений...
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-date">
+                                    10.09.2020 — 21.07.2021
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="champions">
+        <div class="container">
+            <div class="swiper swiper-init_2">
+                <div class="slider-navigation">
+                    <h3 class="title">
+                        Наши чемпионы
+                    </h3>
+                    <div class="slider-button">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <ul class="swiper-wrapper wrapper-3">
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="swiper-slide card-item">
+                        <div class="card-img">
+                            <img src="img/img5.jpg" alt="img">
+                        </div>
+                        <div class="card-info-wrapper">
+                            <div class="card-info">
+                                <div class="card-text">
+                                    <div class="card-name">
+                                        Русаков Сергей
+                                    </div>
+                                    <ul class="card-list">
+                                        <li class="card-list-item">
+                                            IV Чемпион России по банному мастерству (2013г.)
+                                        </li>
+                                        <li class="card-list-item">
+                                            II место Открытого Кубка Европы по спортивному парению (2013г.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="parents">
+        <div class="container">
+            <div class="parents-title">Региональные Организации входящие в состав Национальной Федерации специалистов банного парения:</div>
+            <div class="parents-items items-1">
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite01.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite02.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite03.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite04.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite05.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite06.svg" alt="img">
+                    </a>
+                </div>
+            </div>
+            <div class="parents-title">Спонсоры и партнеры федерации </div>
+            <div class="parents-items items-2">
+                <div class="parents-item item-col__2">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite07.svg" alt="img">
+                    </a>
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite08.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite09.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite10.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite11.svg" alt="img">
+                    </a>
+                </div>
+                <div class="parents-item">
+                    <a class="parent-link" href="#">
+                        <img src="img/sprite12.svg" alt="img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="logo">
+                    <a href="#">
+                        <img src="img/logo2.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="accordion-items">
+                    <div class="footer-wrap footer-wrap__accordion">
+                        <p class="footer-list__tilte title-accordion">О нас</p>
+                        <ul class="footer-list footer-list__accordion">
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Контакты
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Представители
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Представители
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Представители
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Представители
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-wrap footer-wrap__accordion">
+                        <p class="footer-list__tilte title-accordion">Участники</p>
+                        <ul class="footer-list footer-list__accordion">
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Чемпионы Русь
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Парильщики
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Преподователи
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Бани
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    Производители
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-wrapper">
+                        <div class="footer-wrap footer-wrap__accordion">
+                            <p class="footer-list__tilte title-accordion">Мероприятия</p>
+                            <ul class="footer-list footer-list__accordion">
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">
+                                        Название мероприятия
+                                    </a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">
+                                        Название мероприятия
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-wrap border-disable footer-wrap__accordion">
+                            <p class="footer-list__tilte title-accordion">Премия</p>
+                            <ul class="footer-list footer-list__accordion">
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">
+                                        Победители премии
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-wrapper">
+                    <div class="footer-wrap">
+                        <p class="footer-list__tilte title-5">Карта участников</p>
+                    </div>
+                    <div class="footer-wrap">
+                        <p class="footer-list__tilte">Контакты</p>
+                        <ul class="footer-list">
+                            <li class="footer-list__item">
+                                <a href="#" class="footer-list__link">
+                                    <img src="img/map.svg" alt="icon" class="icon">
+                                    г. Москва ул. 13-я Парковая улица, 12, 105122
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="tel:8495427959" class="footer-list__link">
+                                    <img src="img/phone.svg" alt="icon" class="icon">
+                                    +7 (495) 542 79 59
+                                </a>
+                            </li>
+                            <li class="footer-list__item">
+                                <a href="mailto:info@parilka.pro" class="footer-list__link">
+                                    <img src="img/message.svg" alt="icon" class="icon">
+                                    info@parilka.pro
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-wrap">
+                    <div class="user">
+                        <button class="button register">Регистрация</button>
+                        <button class="sign-in">Вход</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Подключение скриптов -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Конец подключения -->
+</body>
+</html>
